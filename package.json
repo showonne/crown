@@ -1,0 +1,39 @@
+{
+  "name": "crown-cli",
+  "version": "0.0.1",
+  "description": "",
+  "bin": {
+    "crown": "bin/crown.js",
+    "crown-dev": "bin/crown-dev.js",
+    "crown-build": "bin/crown-build.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "showonne",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "express": "^4.16.3",
+    "express-ftl": "0.0.3",
+    "express-localmock": "0.0.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-harddisk-plugin": "^0.2.0",
+    "html-webpack-plugin": "^2.30.1",
+    "http-proxy-middleware": "^0.18.0",
+    "ora": "^2.0.0",
+    "postcss-each": "^0.10.0",
+    "postcss-import": "^11.1.0",
+    "postcss-salad": "^2.0.1",
+    "shelljs": "^0.8.1",
+    "webpack": "^3.11.0",
+    "webpack-dev-middleware": "^2.0.6",
+    "webpack-hot-middleware": "^2.22.1",
+    "webpack-merge": "^4.1.2",
+    "webpack-parallel-uglify-plugin": "^1.1.0",
+    "xa": "^1.0.5"
+  }
+}
