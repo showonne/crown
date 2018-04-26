@@ -12,6 +12,7 @@
   },
   "keywords": [],
   "author": "showonne",
+  "homepage": "https://github.com/showonne/crown",
   "license": "MIT",
   "dependencies": {
     "commander": "^2.15.1",
