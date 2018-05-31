@@ -26,7 +26,7 @@ if(!fs.existsSync(configPath)){
     return
 }
 
-let { crownConfig = {} } = require(configPath)
+let crownConfig = require(configPath)
 
 const webpackConfig = require('../webpack-conf/webpack.prod.conf.js')(crownConfig)
 
