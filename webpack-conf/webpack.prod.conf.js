@@ -29,7 +29,7 @@ module.exports = crownConfig => {
 
     var buildConf = {
         output: {
-            path: path.resolve('resource/dist'),
+            path: path.resolve('dist'),
             filename: '[name].[hash:4].js',
             publicPath: '/dist'
         },
