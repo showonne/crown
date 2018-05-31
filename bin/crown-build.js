@@ -18,7 +18,7 @@ program
     .parse(process.argv)
 
 
-const configPath = path.resolve(program.config || 'crown.conf.js')
+const configPath = path.resolve(program.config || 'crown.config.js')
 
 if(!fs.existsSync(configPath)){
     console.log()
