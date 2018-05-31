@@ -8,6 +8,8 @@ const xa = require('xa')
 const express = require('express')
 const webpack = require('webpack')
 
+const bodyParser = require('body-parser')
+
 const pkg = require('../package.json')
 
 program
@@ -34,6 +36,13 @@ Object.keys(webpackConfig.entry).map(key => {
 })
 
 const app = express()
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
+
+// parse application/json
+app.use(bodyParser.json())
+
 const compiler = webpack(webpackConfig)
 
 const devMiddleware = require('webpack-dev-middleware')(compiler, {

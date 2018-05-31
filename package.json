@@ -15,6 +15,7 @@
   "homepage": "https://github.com/showonne/crown",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "commander": "^2.15.1",
     "eslint-friendly-formatter": "^4.0.1",
     "express": "^4.16.3",
