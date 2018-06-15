@@ -10,6 +10,8 @@ const webpack = require('webpack')
 
 const bodyParser = require('body-parser')
 
+const routerMap = require('../middlewares/routerMap');
+
 const pkg = require('../package.json')
 
 program
@@ -77,6 +79,8 @@ switch(crownConfig.views.engine){
 }
 
 const router = require('../router.js')
+
+app.use(crownConfig.pageListPath || '/crown', routerMap(crownConfig.pages))
 
 router(app, crownConfig.pages)
 
