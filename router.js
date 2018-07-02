@@ -15,11 +15,12 @@ function readJSON(path){
 
 module.exports = (app, pagesMap) => {
     const viewMockPath = path.resolve(app.get('views mock'))
+    const globalPath = path.resolve(app.get('views mock'), '__global/data.json')
 
     pagesMap.map(page => {
         app.get(page.url, (req, res, next) => {
             if(/text\/html/.test(req.headers.accept)){
-                res.render(page.name, readJSON(`${viewMockPath}/${page.name}.json`))
+                res.render(page.name, Object.assign(readJSON(globalPath), readJSON(`${viewMockPath}/${page.name}.json`)))
             }else{
                 next()
             }

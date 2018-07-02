@@ -10,7 +10,7 @@ const webpack = require('webpack')
 
 const bodyParser = require('body-parser')
 
-const routerMap = require('../middlewares/routerMap');
+const routerMap = require('../middlewares/routerMap')
 
 const pkg = require('../package.json')
 
